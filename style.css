@@ -1,0 +1,30 @@
+body {
+  background: rgb(34, 81, 65);
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 1.2em; /* Make base font larger */
+}
+
+h1 {
+  font-size: 3em; /* bigger headers */
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.navbar a {
+  font-size: 1.2em;
+}
+
+table {
+  font-size: 1.4em;
+}
+
+footer {
+  font-size: 1em;
+}
