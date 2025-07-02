@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AGcoding</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- AOS Library for scroll animations -->
+  <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
-    /* Reset & base */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: rgb(34, 81, 65);
@@ -17,7 +15,6 @@
       color: #fff;
     }
 
-    /* Sticky navbar */
     .navbar {
       background: #000;
       position: sticky;
@@ -63,7 +60,6 @@
       margin-bottom: 1em;
     }
 
-    /* Fade-in */
     .fade-in {
       opacity: 0;
       animation: fadeIn 3s ease-in forwards;
@@ -72,7 +68,6 @@
       to { opacity: 1; }
     }
 
-    /* Slide-up */
     .slide-in {
       opacity: 0;
       transform: translateY(20px);
@@ -102,60 +97,72 @@
       font-size: 0.8em;
       color: #ccc;
     }
+
+    /* ✨ Responsive Styles Only */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      h3, p {
+        font-size: 1em;
+      }
+
+      table {
+        width: 100%;
+        font-size: 1em;
+      }
+
+      .zoom img {
+        width: 80%;
+        height: auto;
+      }
+
+      td, th {
+        padding: 8px;
+      }
+
+      .navbar li {
+        margin: 10px 0;
+      }
+    }
   </style>
 </head>
 <body>
 
-
-
   <!-- Header / Logo -->
   <header data-aos="fade-down">
     <div class="zoom">
-      <img src="images/logo-and-name.png"
-           alt="AGcoding Logo"
-           style="width: 30%; height: auto;">
+      <img src="images/logo-and-name.png" alt="AGcoding Logo" style="width: 30%; height: auto;" />
     </div>
   </header>
-  <br>
-  <br>
+  <br><br>
 
   <main>
     <!-- Welcome Section -->
     <section id="welcome" data-aos="fade-up">
-      <h1 class="fade-in" style="color: aquamarine; font-size: 2.5em;">
-        Welcome to AGcoding
-      </h1>
-      <h3 class="fade-in" style="font-size: 1.3em;">
-        The only company that offers the <strong>best content for the best price!</strong>
-      </h3>
-      <p class="fade-in" style="font-size: x-large;">
-        Right now we teach only <strong>Python</strong> and <strong>Scratch</strong>.<br>
-        More courses coming soon 🔥
-      </p>
+      <h1 class="fade-in" style="color: aquamarine; font-size: 2.5em;">Welcome to AGcoding</h1>
+      <h3 class="fade-in" style="font-size: 1.3em;">The only company that offers the <strong>best content for the best price!</strong></h3>
+      <p class="fade-in" style="font-size: x-large;">Right now we teach only <strong>Python</strong> and <strong>Scratch</strong>.<br>More courses coming soon 🔥</p>
     </section>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
+    <br><br><hr><br><br>
 
     <!-- Plans Section -->
     <section id="plans" data-aos="slide-up">
-      <h1 class="slide-in" style="color: aquamarine; font-size: 2.5em;">
-        Our Plans
-      </h1>
+      <h1 class="slide-in" style="color: aquamarine; font-size: 2.5em;">Our Plans</h1>
       <table class="slide-in" style="animation-delay: 0.5s;">
         <tr>
-          <th style="color: gold; width: 50%;"><strong>GOLD</strong></th>
-          <th style="color: lightblue; width: 50%;"><strong>DIAMOND</strong></th>
+          <th style="color: gold;"><strong>GOLD</strong></th>
+          <th style="color: lightblue;"><strong>DIAMOND</strong></th>
         </tr>
         <tr>
-          <td style="background: gold;">
-            short video 🔥<br>live sessions ❌<br>forum ❌
-          </td>
-          <td style="background: lightblue;">
-            short video 🔥<br>live sessions 🔥<br>forum 🔥
-          </td>
+          <td style="background: gold;">short video 🔥<br>live sessions ❌<br>forum ❌</td>
+          <td style="background: lightblue;">short video 🔥<br>live sessions 🔥<br>forum 🔥</td>
         </tr>
         <tr>
           <td style="background: gold;">$100</td>
@@ -163,63 +170,35 @@
         </tr>
       </table>
     </section>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
+    <br><br><hr><br><br>
 
     <!-- Accounts Section -->
     <section id="accounts" data-aos="slide-right" data-aos-duration="1200">
-      <h1 class="slide-in"
-          style="color: aquamarine; font-size: 2.5em; animation-delay: 1s;">
-        Our Accounts
-      </h1>
+      <h1 class="slide-in" style="color: aquamarine; font-size: 2.5em; animation-delay: 1s;">Our Accounts</h1>
       <p>
-        <a href="https://www.youtube.com/channel/UCZ2z_eWDUY14qcTEWNAidPA"
-           target="_blank"
-           style="color: #fff; text-decoration: none; font-size: 1.5em;">
-          <img src="images/You-logo.jpg"
-               alt="YouTube Logo"
-               style="width: 50px; vertical-align: middle;">
-          YouTube
+        <a href="https://www.youtube.com/channel/UCZ2z_eWDUY14qcTEWNAidPA" target="_blank" style="color: #fff; text-decoration: none; font-size: 1.5em;">
+          <img src="images/You-logo.jpg" alt="YouTube Logo" style="width: 50px; vertical-align: middle;"> YouTube
         </a>
       </p>
     </section>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
+    <br><br><hr><br><br>
+
     <!-- Contact Section -->
     <section id="contact" data-aos="slide-left" data-aos-duration="1200">
-      <h1 class="fade-in"
-          style="color: aquamarine; font-size: 2.5em; animation-delay: 1.5s;">
-        Contact Us
-      </h1>
+      <h1 class="fade-in" style="color: aquamarine; font-size: 2.5em; animation-delay: 1.5s;">Contact Us</h1>
       <p>
-        <a href="https://discord.com/" target="_blank"
-           style="color: #fff; text-decoration: none; font-size: 1.2em;">
-          Add me on
-          <img src="images/dis-logo.png"
-               style="width: 40px; vertical-align: middle;"> 
-          <strong>agcoding</strong>
+        <a href="https://discord.com/" target="_blank" style="color: #fff; text-decoration: none; font-size: 1.2em;">
+          Add me on <img src="images/dis-logo.png" style="width: 40px; vertical-align: middle;"> <strong>agcoding</strong>
         </a>
       </p>
       <p>
-        <a href="mailto:agcoding09@gmail.com"
-           style="color: #fff; text-decoration: none; font-size: 1.2em;">
-          <img src="images/Gmail-logo.png"
-               style="width: 40px; vertical-align: middle;">
-          <strong>agcoding09@gmail.com</strong>
+        <a href="mailto:agcoding09@gmail.com" style="color: #fff; text-decoration: none; font-size: 1.2em;">
+          <img src="images/Gmail-logo.png" style="width: 40px; vertical-align: middle;"> <strong>agcoding09@gmail.com</strong>
         </a>
       </p>
     </section>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
+    <br><br><hr><br><br>
+
     <!-- Footer -->
     <footer data-aos="fade-in" data-aos-duration="1200" data-aos-delay="2000">
       <p>© 2025 AGcoding. All rights reserved.</p>
